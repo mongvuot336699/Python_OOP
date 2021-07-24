@@ -1,5 +1,4 @@
 class Customer:
-
     def __init__(self, id, name, contact, address, city, postal_code, country):
         self.id = id
         self.name = name
