@@ -1,4 +1,6 @@
 class Customer:
+    __index = 0
+
     def __init__(self, id, name, contact, address, city, postal_code, country):
         self.id = id
         self.name = name
@@ -24,65 +26,15 @@ class Employees:
         self.birth_date = birth_date
         self.photo = photo
         self.notes = notes
-        
 
-<<<<<<< HEAD
-class Orders:
-    def __init__(self, id, customer_id, employee_id, order_date, shipper_id):
-        self.id = id
-=======
-    def __init__(self, id, name, contact, address, city, postal_code, country):
-        self.id = id
-        self.name = name
-        self.contact = contact
-        self.address = address
-        self.city = city
-        self.postalcode = postal_code
-        self.country = country
-
-
-class Categories:
-    def __init__(self, id, name, description):
-        self.id = id
-        self.name = name
-        self.description = description
-
-
-class Employees:
-    def __init__(self, id, last_name, first_name, birth_date, photo, notes):
-        self.id = id
-        self.last_name = last_name
-        self.first_name = first_name
-        self.birth_date = birth_date
-        self.photo = photo
-        self.notes = notes
-        
 
 class Orders:
     def __init__(self, id, customer_id, employee_id, order_date, shipper_id):
         self.id = id
->>>>>>> b86b568be2c97ae31fce6f64d7875df58a082e09
         self.customer_id = customer_id
         self.employee_id = employee_id
         self.order_date = order_date
         self.shipper_id = shipper_id
-<<<<<<< HEAD
-
-
-
-class Order:
-    """
-    This class containt information such as:
-    OrderID, CusID, Employ_id, Order_date, Shipper_id
-    """
-
-    def __init__(self, order_id, customer_id,
-                 employee_id, order_date, shipper_id):
-        self.OrderId = order_id
-        self.CustomerId = customer_id
-        self.EmployeeId = employee_id
-        self.OrderDate = order_date
-        self.ShippingId = shipper_id
 
 
 class OrderDetail:
@@ -138,6 +90,3 @@ class Product:
         self.CatergoryId = catergory_id
         self.Unit = unit
         self.Price = price
-=======
-        
->>>>>>> b86b568be2c97ae31fce6f64d7875df58a082e09
